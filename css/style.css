@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+body{background-color: #000;}
+
+/* header */
+header{height: 80px;}
+header .wrap{width: 1200px; height: 100%; padding: 0 10px; margin: 0 auto; position: relative;}
+header .wrap .logo{}
+header .wrap .logo a{}
+header .wrap .logo a img{display: block; height: 40px; position: absolute; top: 20px; left: 10px;}
+
+header .wrap nav{width: calc(50% - 20px); margin: 0 auto; height: 100%;}
+header .wrap nav ul{/*background-color: #faf;*/ display: flex; justify-content: space-between;}
+header .wrap nav ul li{line-height: 80px;}
+header .wrap nav ul li a{display: block; color: #fff; font-size: 14px; transition: color 0.5s;}
+
+header .wrap nav ul li:hover a{color: #ffdb00;}
+
+header .wrap .icon{position: absolute; top: 30px; right: 10px; display: flex;}
+header .wrap .icon a{margin-right: 15px;}
+header .wrap .icon a:last-child{margin-right: 0;}
+header .wrap .icon a img{height: 20px;}
+
+/* main_banner */
+.main_banner{width: 100%; height: 540px; animation: 40s slideImg infinite linear; background-image: url(../img/main_05.png); background-position: 50% 50%;}
+
+@keyframes slideImg{
+    0%{background-image: url(../img/main_05.png);}
+    25%{background-image: url(../img/main_01.png);}
+    50%{background-image: url(../img/main_02.png);}
+    75%{background-image: url(../img/main_03.png);}
+    100%{background-image: url(../img/main_05.png);}
+}
+
+.main_banner .dark{width: 100%; height: 100%; background-color: rgba(0,0,0,0.3);}
+.main_banner .dark .wrap{width: 1200px; padding: 0 10px; margin: 0 auto;}
+
+.main_banner .dark .wrap .txt_box{display: flex; align-items: center;  width: calc(100% / 12 * 5); padding-top: 180px;}
+.main_banner .dark .wrap .txt_box img{margin-right: 20px;}
+.main_banner .dark .wrap .txt_box h2{font-size: 36px; color: #fff; line-height: 1; font-weight: normal; /*position: relative;*/}
+/* .main_banner .wrap .txt_box h2:before{content: ""; display: block; width: 70px; height: 110px; border: 10px solid #ffdb00; position: absolute; } */
+
+
+/* section #lastestStories */
+#lastestStories{width: 100%;}
+#lastestStories .wrap{width: 1200px; padding: 120px 0; margin: 0 auto;}
+#lastestStories .wrap .title{width: 100%; padding: 0 10px; height: 60px; margin-bottom: 40px;}
+#lastestStories .wrap .title h2{font-size: 36px; color: #fefefe; font-weight: 100; line-height: 60px;}
+
+#lastestStories .cont{display: flex; flex-wrap: wrap;}
+#lastestStories .cont .box{width: calc(100% / 12 * 3 - 20px); margin: 0 10px; margin-bottom: 20px; height: 400px; background-color: #fff; position: relative; transition: background-color 0.5s;}
+
+#lastestStories .cont .box:hover{background-color: #ffdb00;}
+
+#lastestStories .cont .box1{width: calc(100% / 12 * 6 - 20px); margin: 0 10px; margin-bottom: 20px;}
+
+#lastestStories .cont .box .img_part{background-size: cover; background-position: 50% 50%; height: 200px;}
+
+#lastestStories .cont .box:nth-child(1) .img_part{height: 100%; background-image: url(../img/animals/animal_news_1.jpg);}
+#lastestStories .cont .box:nth-child(2) .img_part{background-image: url(../img/animals/animal_news_2.jpg);}
+#lastestStories .cont .box:nth-child(3) .img_part{background-image: url(../img/animals/animal_news_3.jpg);}
+#lastestStories .cont .box:nth-child(4) .img_part{background-image: url(../img/animals/animal_news_4.jpg);}
+#lastestStories .cont .box:nth-child(5) .img_part{background-image: url(../img/animals/animal_news_5.jpg);}
+#lastestStories .cont .box:nth-child(6) .img_part{background-image: url(../img/animals/animal_news_6.jpg);}
+#lastestStories .cont .box:nth-child(7) .img_part{background-image: url(../img/animals/animal_news_7.jpg);}
+#lastestStories .cont .box:nth-child(8) .img_part{background-image: url(../img/animals/animal_news_8.jpg);}
+#lastestStories .cont .box:nth-child(9) .img_part{background-image: url(../img/animals/animal_news_9.jpg);}
+#lastestStories .cont .box:nth-child(10) .img_part{background-image: url(../img/animals/animal_news_10.jpg);}
+#lastestStories .cont .box:nth-child(11) .img_part{background-image: url(../img/animals/animal_news_11.jpg);}
+
+#lastestStories .cont .box .txt_part{width: 100%; height: 200px; padding: 20px; /*background-color: #afa;*/}
+
+#lastestStories .cont .box:nth-child(1) .txt_part{width: calc(100% / 6 * 4); position: absolute; bottom: 0;}
+
+#lastestStories .cont .box .txt_part h4{font-size: 14px; color: #555555; font-weight: 400; margin-bottom: 20px; line-height: 20px;}
+
+#lastestStories .cont .box:nth-child(1) .txt_part h4{font-size: 16px; color: #fefefe;}
+
+#lastestStories .cont .box .txt_part p{font-size: 16px; color: #333333; line-height: 1.2;}
+
+#lastestStories .cont .box:nth-child(1) .txt_part p{font-size: 20px; color: #fefefe;}
+
+#lastestStories .cont .box .txt_part a{font-size: 14px; font-weight: 200; color: #555555; position: absolute; bottom: 20px;}
+
+#lastestStories .cont .box:nth-child(1) .txt_part a{color: #fefefe;}
+
+/* section #subscriber */
+
+#subscriber{width: 100%; padding: 120px 0; /*height: 700px;*/}
+#subscriber .wrap{width: 1200px; margin: 0 auto;}
+#subscriber .wrap .title{margin-bottom: 40px; margin-left: 10px;}
+#subscriber .wrap .title h2{font-size: 36px; font-weight: 200; line-height: 60px; color: #fefefe;}
+
+#subscriber .wrap .cont{display: flex; flex-wrap: wrap;}
+#subscriber .wrap .cont .bg_box{width: calc(100% / 4 - 20px); margin: 0 10px; height: 340px; background-size: cover; background-position: 50% 50%; border: 2px solid #ffdb00; margin-bottom: 20px;}
+#subscriber .wrap .cont .bg_box .dark{width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);}
+
+#subscriber .wrap .cont .bg_box:nth-child(1){background-image: url(../img/poster_1.jpg);}
+#subscriber .wrap .cont .bg_box:nth-child(2){background-image: url(../img/poster_2.jpg);}
+#subscriber .wrap .cont .bg_box:nth-child(3){background-image: url(../img/poster_4.jpg);}
+#subscriber .wrap .cont .bg_box:nth-child(4){background-image: url(../img/poster_5.jpg);}
+
+#subscriber .wrap .cont .bg_box .txt_part{text-align: center; color: #fefefe; padding: 90px 0 80px;}
+#subscriber .wrap .cont .bg_box .txt_part h5{font-size: 14px; font-weight: 400; line-height: 20px; margin-bottom: 20px;}
+#subscriber .wrap .cont .bg_box .txt_part p{font-size: 16px; margin-bottom: 40px; line-height: 20px;}
+#subscriber .wrap .cont .bg_box .txt_part a{display: block; width: 70px; height: 40px; background-color: #ffdb00; color: #555555; font-size: 14px; line-height: 40px; margin: 0 auto; transition: color 0.5s;}
+
+#subscriber .wrap .cont .bg_box .txt_part a:hover{color: #fefefe;}
+
+/* section # signUp */
+#signUp{width: 100%; height: 240px; background-image: url(../img/banner_bg.jpg); background-size: cover; background-position: 50% 50%; padding-top: 60px; padding-bottom: 45px;}
+
+#signUp .txt_part{text-align: center; color: #fefefe;}
+#signUp .txt_part h5{font-size: 24px; font-weight: 400; text-transform: uppercase; line-height: 40px; margin-bottom: 20px;}
+#signUp .txt_part p{font-size: 16px; font-weight: 200; line-height: 20px; margin-bottom: 20px;}
+#signUp .txt_part a{display: block; width: 180px; height: 35px; margin: 0 auto; background-color: #ffdb00; font-size: 14px; color: #555555; text-transform: uppercase; line-height: 35px; transition: color 0.5s;}
+
+#signUp .txt_part a:hover{color: #fefefe;}
+
+/* footer */
+footer{width: 100%;}
+footer .wrap{width: 1200px; margin: 0 auto; padding: 0 10px; padding-top: 20px;}
+footer .wrap .top{display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;}
+footer .wrap .top .logo{}
+footer .wrap .top .logo img{height: 40px;}
+
+footer .wrap .top ul{display: flex;}
+footer .wrap .top ul li{margin: 0 15px;}
+footer .wrap .top ul li a{display: block; font-size: 14px; color: #fff; transition: color 0.5s;}
+
+footer .wrap .top ul li:hover a{color: #ffdb00;}
+
+footer .wrap .top .icon{}
+footer .wrap .top .icon a{float: left; margin-right: 10px;}
+footer .wrap .top .icon a:last-child{margin-right: 0;}
+footer .wrap .top .icon a img{display: block; height: 15px;}
+
+footer .wrap .copyrights{font-size: 14px; color: #555555; text-align: center; line-height: 30px;}
+
+
+
+
+
